@@ -21,52 +21,52 @@ import io.swagger.annotations.ApiModelProperty;
 import javax.validation.constraints.*;
 
 /**
- * InlineResponse200
+ * InlineResponse404
  */
 @javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaJerseyServerCodegen", date = "2019-02-11T16:49:32.789Z")
-public class InlineResponse200   {
-  @JsonProperty("name")
-  private String name = null;
+public class InlineResponse404   {
+  @JsonProperty("status")
+  private Integer status = null;
 
-  @JsonProperty("start_date")
-  private String startDate = null;
+  @JsonProperty("message")
+  private String message = null;
 
-  public InlineResponse200 name(String name) {
-    this.name = name;
+  public InlineResponse404 status(Integer status) {
+    this.status = status;
     return this;
   }
 
   /**
-   * user name
-   * @return name
+   * status code
+   * @return status
    **/
-  @JsonProperty("name")
-  @ApiModelProperty(example = "Temil Sanchez", value = "user name")
-  public String getName() {
-    return name;
+  @JsonProperty("status")
+  @ApiModelProperty(example = "404", value = "status code")
+  public Integer getStatus() {
+    return status;
   }
 
-  public void setName(String name) {
-    this.name = name;
+  public void setStatus(Integer status) {
+    this.status = status;
   }
 
-  public InlineResponse200 startDate(String startDate) {
-    this.startDate = startDate;
+  public InlineResponse404 message(String message) {
+    this.message = message;
     return this;
   }
 
   /**
-   * start date
-   * @return startDate
+   * status string
+   * @return message
    **/
-  @JsonProperty("start_date")
-  @ApiModelProperty(example = "10/10/10", value = "start date")
-  public String getStartDate() {
-    return startDate;
+  @JsonProperty("message")
+  @ApiModelProperty(example = "Resource not found Please try different", value = "status string")
+  public String getMessage() {
+    return message;
   }
 
-  public void setStartDate(String startDate) {
-    this.startDate = startDate;
+  public void setMessage(String message) {
+    this.message = message;
   }
 
 
@@ -78,24 +78,24 @@ public class InlineResponse200   {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    InlineResponse200 inlineResponse200 = (InlineResponse200) o;
-    return Objects.equals(this.name, inlineResponse200.name) &&
-        Objects.equals(this.startDate, inlineResponse200.startDate);
+    InlineResponse404 inlineResponse404 = (InlineResponse404) o;
+    return Objects.equals(this.status, inlineResponse404.status) &&
+        Objects.equals(this.message, inlineResponse404.message);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(name, startDate);
+    return Objects.hash(status, message);
   }
 
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class InlineResponse200 {\n");
+    sb.append("class InlineResponse404 {\n");
     
-    sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    startDate: ").append(toIndentedString(startDate)).append("\n");
+    sb.append("    status: ").append(toIndentedString(status)).append("\n");
+    sb.append("    message: ").append(toIndentedString(message)).append("\n");
     sb.append("}");
     return sb.toString();
   }

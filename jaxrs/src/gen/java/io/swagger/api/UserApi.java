@@ -8,6 +8,7 @@ import io.swagger.annotations.ApiParam;
 import io.swagger.jaxrs.*;
 
 import io.swagger.model.InlineResponse200;
+import io.swagger.model.InlineResponse404;
 
 import java.util.Map;
 import java.util.List;
@@ -29,7 +30,7 @@ import javax.validation.constraints.*;
 
 
 @io.swagger.annotations.Api(description = "the user API")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaJerseyServerCodegen", date = "2019-02-11T16:41:33.225Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaJerseyServerCodegen", date = "2019-02-11T16:49:32.789Z")
 public class UserApi  {
    private final UserApiService delegate;
 
@@ -71,7 +72,9 @@ public class UserApi  {
     
     @io.swagger.annotations.ApiOperation(value = "Gets users from DB.", notes = "Get user from DB.", response = InlineResponse200.class, tags={  })
     @io.swagger.annotations.ApiResponses(value = { 
-        @io.swagger.annotations.ApiResponse(code = 200, message = "OK", response = InlineResponse200.class) })
+        @io.swagger.annotations.ApiResponse(code = 200, message = "OK", response = InlineResponse200.class),
+        
+        @io.swagger.annotations.ApiResponse(code = 404, message = "server error", response = InlineResponse404.class) })
     public Response userGet(@ApiParam(value = "employee",required=true) @QueryParam("name") String name
 ,@Context SecurityContext securityContext)
     throws NotFoundException {
