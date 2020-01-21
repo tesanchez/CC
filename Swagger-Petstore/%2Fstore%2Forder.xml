@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource name="/store/order" path="/store/order" id="7ef25cd2-5814-4a95-8ef1-bee30770808d" xmlns:con="http://eviware.com/soapui/config">
+<con:resource name="/store/order" path="/store/order" id="7ef25cd2-5814-4a95-8ef1-bee30770808d" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="7ef25cd2-5814-4a95-8ef1-bee30770808dfileName">%2Fstore%2Forder</con:setting>
   </con:settings>
@@ -71,6 +71,10 @@
   "status" : "placed",\r
   "complete" : true\r
 }</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
       <con:parameters/>
     </con:request>
   </con:method>

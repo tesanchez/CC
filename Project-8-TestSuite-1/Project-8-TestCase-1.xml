@@ -33,7 +33,7 @@
         </con:credentials>
         <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
         <con:parameters>
-          <con:entry key="petId" value="Nathan Wright"/>
+          <con:entry key="petId" value="Temil Sanchez"/>
         </con:parameters>
       </con:restRequest>
     </con:config>

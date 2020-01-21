@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource name="/pet/findByStatus" path="/pet/findByStatus" id="513cd1dd-bdb5-485f-8cee-4fa827dac38b" xmlns:con="http://eviware.com/soapui/config">
+<con:resource name="/pet/findByStatus" path="/pet/findByStatus" id="513cd1dd-bdb5-485f-8cee-4fa827dac38b" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="513cd1dd-bdb5-485f-8cee-4fa827dac38bfileName">%2Fpet%2FfindByStatus</con:setting>
   </con:settings>
@@ -20,7 +20,7 @@ Finds Pets by status</con:description>
       <con:mediaType>application/json</con:mediaType>
       <con:status>200</con:status>
       <con:params/>
-      <con:sampleContent xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+      <con:sampleContent xsi:nil="true"/>
     </con:representation>
     <con:representation type="RESPONSE">
       <con:mediaType>application/xml</con:mediaType>
@@ -58,6 +58,10 @@ Finds Pets by status</con:description>
     <con:request name="Request 1" id="4d35f930-5ffe-419c-9c8f-ecd78ddeee96" mediaType="application/json">
       <con:settings/>
       <con:endpoint>http://petstore.swagger.io</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
       <con:parameters/>
     </con:request>
   </con:method>
