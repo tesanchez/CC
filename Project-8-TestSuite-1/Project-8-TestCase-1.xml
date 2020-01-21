@@ -31,7 +31,10 @@
           <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
           <con:authType>No Authorization</con:authType>
         </con:credentials>
-        <con:parameters/>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="petId" value="Nathan Wright"/>
+        </con:parameters>
       </con:restRequest>
     </con:config>
   </con:testStep>
