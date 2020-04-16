@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="a0ff3772-bbf6-46a4-8b05-5e2f5f6a317a" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TestCase 1" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="a0ff3772-bbf6-46a4-8b05-5e2f5f6a317afileName">TestCase-1</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="REST Request" id="ccde416e-3d7d-4041-9092-28cff886dbe0">
+    <con:settings/>
+    <con:config service="http://test.k6.io" resourcePath="" methodName="" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="REST Request" id="ae2e6c3e-4114-4edc-8c16-48966c47ed51" mediaType="application/json">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>http://test.k6.io</con:endpoint>
+        <con:request/>
+        <con:originalUri>http://test.k6.io/</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="56e27a67-ae08-497d-a356-a7f894c15bfc" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Response SLA Assertion" id="02c7e9ad-fe3d-40c9-9bf7-b8958c1401e8" name="Response SLA">
+          <con:configuration>
+            <SLA>200</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters/>
+        <con:parameterOrder>
+          <con:entry>SampleResource</con:entry>
+        </con:parameterOrder>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

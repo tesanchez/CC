@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:interface xsi:type="con:RestService" id="24de160f-c16c-48a1-a12b-3ba58bb4ab53" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://test.k6.io" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="24de160f-c16c-48a1-a12b-3ba58bb4ab53fileName">http%3A%2F%2Ftest.k6.io</con:setting>
+  </con:settings>
+  <con:definitionCache/>
+  <con:endpoints>
+    <con:endpoint>http://test.k6.io</con:endpoint>
+  </con:endpoints>
+</con:interface>

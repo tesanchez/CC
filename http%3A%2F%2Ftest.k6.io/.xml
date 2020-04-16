@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="" path="" id="bf1b8f91-7d4d-4ee9-8725-a757010f3e10" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="bf1b8f91-7d4d-4ee9-8725-a757010f3e10fileName"/>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="" id="7a8f01be-d5e9-4dfd-9575-53e29f4b14f9" method="GET">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>SampleResource</con:name>
+        <con:value/>
+        <con:style>TEMPLATE</con:style>
+        <con:default/>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/html; charset=UTF-8</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:element>html</con:element>
+    </con:representation>
+    <con:request name="Request 1" id="ae2e6c3e-4114-4edc-8c16-48966c47ed51" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://test.k6.io</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="SampleResource" value="1"/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>SampleResource</con:entry>
+      </con:parameterOrder>
+    </con:request>
+  </con:method>
+</con:resource>
