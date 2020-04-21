@@ -36,6 +36,33 @@
       </con:restRequest>
     </con:config>
   </con:testStep>
+  <con:testStep type="restrequest" name="REST Request 2" id="69cc8e91-4a6b-4afa-8046-019a003553f8">
+    <con:settings/>
+    <con:config service="http://test.k6.io" methodName="" resourcePath="" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="REST Request 2" id="1e61deb0-ba97-4fe1-beaf-1f7bb83b2cc6" mediaType="application/json">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://test.k6.io</con:endpoint>
+        <con:request/>
+        <con:assertion type="Valid HTTP Status Codes" id="655c00a4-9f19-4c87-93f6-c2b7fb9e9b71" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Response SLA Assertion" id="78093103-2d19-418f-be9c-d07b727fb676" name="Response SLA">
+          <con:configuration>
+            <SLA>200</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:parameters/>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
   <con:properties/>
   <con:reportParameters/>
 </con:testCase>
